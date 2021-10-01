@@ -85,7 +85,7 @@ def write_csv(ads):
                     }
 
                     # SEND DISCORD
-                    result = rq.post("https://discord.com/api/webhooks/893520952586022942/ntCVDceSr7XmRnsD_tRsDXQB2bE12dIDpfXptBigSiXhpwHWE2YlN6uZx8JkiUCHF-Eb", data=json.dumps(data), headers={
+                    result = rq.post("#", data=json.dumps(data), headers={
                         "Content-Type": "application/json"})
                     try:
                         result.raise_for_status()
